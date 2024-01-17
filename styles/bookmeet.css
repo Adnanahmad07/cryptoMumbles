@@ -8,11 +8,105 @@
 .bookmeet .left-m {
     width: 50%;
     height: 100%;
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+.bookmeet .left-m #free {
+    /* border: 2px solid black; */
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bookmeet .left-m #free h1 {
+    font-size: 45px;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.bookmeet .left-m #free div {
+    max-width: 450px;
+
+}
+
+.bookmeet .left-m #free p {
+    max-width: 430px;
+    text-align: start;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+
+
+
 
 .bookmeet .right-m {
     width: 50%;
     height: 100%;
-    background-color: rgb(195, 230, 173);
+    /* background-color: rgb(195, 230, 173); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
+
+.bookmeet .right-m #r-m {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    width: 450px;
+    justify-content: space-around;
+
+}
+
+.bookmeet .right-m #r-m a button {
+    padding: 30px 50px;
+    border-radius: 45px;
+    font-size: 19px;
+    background: rgb(255, 255, 65);
+    border: transparent;
+    transition: all 0.4s;
+
+}
+
+.bookmeet .right-m #r-m a button:hover {
+    background: black;
+    color: white;
+    transform: scale(0.98);
+}
+
+
+@media (max-width: 800px) {
+    .bookmeet {
+        flex-direction: column;
+        height: fit-content;
+
+    }
+
+    .bookmeet .left-m {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .bookmeet .right-m {
+        width: 100%;
+        padding: 2rem 0;
+
+    }
+}
+
+
+
+@media (max-width: 600px) {}
