@@ -1,0 +1,18 @@
+.bookmeet {
+    width: 100vw;
+    height: 400px;
+    background: rgb(240, 240, 240);
+    display: flex;
+}
+
+.bookmeet .left-m {
+    width: 50%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+.bookmeet .right-m {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(195, 230, 173);
+}

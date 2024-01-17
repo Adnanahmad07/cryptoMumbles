@@ -1,0 +1,130 @@
+.Services {
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.Services h2 {
+    margin-bottom: 3rem;
+    font-family: tahoma;
+    color: white;
+}
+
+.Services .grid-container {
+    width: 90vw;
+    /* height: 100%; */
+    background: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+
+}
+
+.card {
+
+    background-color: rgb(55, 55, 55);
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    border-radius: 12px;
+    transition: all 0.3s;
+
+
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h4 {
+    font-size: 25px;
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+
+}
+
+.card div {
+    width: 100%;
+    height: 4px;
+    background: yellow;
+    border-radius: 11px;
+    margin-bottom: 1.5rem;
+
+
+}
+
+.card p {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f4f4f4;
+}
+
+.card button {
+    padding: 20px;
+    border: white;
+    border-radius: 8px;
+    cursor: pointer;
+
+
+}
+
+.card button:hover {
+    opacity: 0.8;
+    /* border: 3px solid white; */
+    color: white;
+
+
+}
+
+.card button:active {
+    opacity: 0.6;
+}
+
+.card button a {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 400;
+    color: black;
+}
+
+
+@media (max-width: 800px) {
+    .Services .grid-container {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .Services h2 {
+        text-align: center;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+
+
+    .Services .grid-container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .Services h2 {
+        max-width: 400px;
+        text-align: center;
+
+    }
+
+}
