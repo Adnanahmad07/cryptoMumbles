@@ -1,7 +1,7 @@
 .bookmeet {
     width: 100vw;
     height: 400px;
-    background: rgb(240, 240, 240);
+    background: rgb(212, 212, 212);
     display: flex;
 }
 
@@ -104,6 +104,21 @@
         width: 100%;
         padding: 2rem 0;
 
+
+    }
+
+    .bookmeet .right-m #r-m {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .bookmeet .right-m #r-m a button {
+        padding: 20px 35px;
+    }
+
+    .bookmeet .right-m #r-m img {
+        width: 60px;
     }
 }
 

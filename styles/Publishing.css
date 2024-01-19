@@ -1,0 +1,141 @@
+.Publishing-prt {
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(239, 239, 239);
+    display: flex;
+
+}
+
+.Publishing-prt-r {
+    width: 50%;
+    height: 100%;
+    /* background: lightblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Publishing-prt-r-center {
+    width: 70%;
+    height: 70%;
+    /* border: 1px solid; */
+}
+
+.Publishing-prt-r-center h1 {
+    font-size: 43px;
+    font-family: tahoma;
+    font-weight: 700;
+    max-width: 300px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    letter-spacing: 3px;
+}
+
+.Publishing-prt-r-center p {
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    text-align: left;
+    line-height: 25px;
+
+}
+
+.Publishing-prt-l {
+    width: 50%;
+    height: 100%;
+    /* background: rgb(221, 230, 173); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.publishing-prt-l-center {
+    width: 70%;
+    height: 70%;
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    overflow: hidden;
+}
+
+.publishing-prt-l-center:hover .smollbox {
+    animation-play-state: paused;
+}
+
+@keyframes slid {
+    from {
+        transform: translatey(0);
+    }
+
+    to {
+        transform: translatey(-200%);
+
+    }
+}
+
+.smollbox {
+    width: 130px;
+    height: 60px;
+    /* border: 1px solid; */
+    cursor: pointer;
+    animation: 5s slid infinite linear;
+    margin: 30px 0;
+
+
+
+}
+
+.smollbox img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+    transition: all 0.3s;
+}
+
+.smollbox img:hover {
+    transform: scale(1.2, 1.3);
+}
+
+
+
+@media (max-width: 800px) {
+    .Publishing-prt {
+        flex-direction: column;
+        align-items: center;
+        height: 800px;
+    }
+
+    .Publishing-prt-r {
+        width: 100%;
+    }
+
+    .Publishing-prt-r-center {
+        width: 80%;
+    }
+
+    .Publishing-prt-r-center h1 {
+        max-width: none;
+        text-align: center;
+    }
+
+    .Publishing-prt-l {
+        width: 100%;
+    }
+
+    .publishing-prt-l-center {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .publishing-prt-l-center {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}

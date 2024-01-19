@@ -1,0 +1,170 @@
+.payments {
+    width: 100%;
+    height: 400px;
+    background: rgb(83, 83, 83);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.payments .payments-center {
+    width: 85%;
+    height: 95%;
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 22px;
+}
+
+.payments-chide {
+    flex: 1;
+    /* border: 2px solid green; */
+
+
+
+
+}
+
+.py-logo div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+
+}
+
+.py-logo div img {
+    width: 120px;
+}
+
+.py-logo div h2 {
+    display: inline-block;
+    margin-bottom: 1.3rem;
+    color: white;
+    font-weight: 100;
+}
+
+.py-logo div h2 span {
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.py-logo .social-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.py-logo .social-contact a img {
+    width: 35px;
+}
+
+
+.q-services h2 {
+    font-size: 29px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+}
+
+.q-services ul {
+    margin-left: 2rem;
+    text-align: start;
+}
+
+.q-services ul li {
+    color: rgb(0, 0, 0);
+    margin: 15px 0;
+
+
+
+}
+
+
+.payment {
+    display: flex;
+    justify-content: center;
+
+}
+
+.payment h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+
+.payment ul li {
+    margin: 1rem 0;
+    color: black;
+
+}
+
+
+.payment ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+
+}
+
+@media(max-width: 800px) {
+    .payments {
+        height: fit-content;
+    }
+
+    .payments .payments-center {
+        flex-direction: column;
+
+    }
+
+    .payments .payments-center .payments-chide {
+        justify-content: start;
+        text-align: start;
+    }
+
+
+    .q-services h2 {
+
+        text-align: start;
+
+
+    }
+
+
+}
+
+
+
+
+
+footer {
+    height: 70px;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer div {
+    color: white;
+    /* max-width: 500px; */
+    font-size: 22px;
+
+}
+
+footer div .ownername {
+    color: red;
+    font-weight: 700;
+}
+
+@media(max-width:800px) {
+    footer div {
+        text-align: center;
+    }
+}

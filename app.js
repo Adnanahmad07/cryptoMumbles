@@ -22,3 +22,8 @@ menuBtn.onclick = () => {
 function closebtn() {
     menuCard.style.right = "-400px";
 }
+
+const date = new Date()
+const year = date.getFullYear();
+
+document.getElementById("year").textContent = " " + year;

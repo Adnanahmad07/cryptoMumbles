@@ -72,18 +72,24 @@
 }
 
 .card button {
-    padding: 20px;
+    padding: 17px;
     border: white;
     border-radius: 8px;
     cursor: pointer;
+    width: 100%;
+    border: 3px solid transparent;
+    transition: all 0.4s;
+    font-size: 22px;
 
 
 }
 
 .card button:hover {
     opacity: 0.8;
-    /* border: 3px solid white; */
+    border: 3px solid white;
+    background-color: black;
     color: white;
+
 
 
 }
@@ -92,12 +98,12 @@
     opacity: 0.6;
 }
 
-.card button a {
+/* .card button a {
     text-decoration: none;
     font-size: 21px;
     font-weight: 400;
     color: black;
-}
+} */
 
 
 @media (max-width: 800px) {
