@@ -93,6 +93,7 @@
     .bookmeet {
         flex-direction: column;
         height: fit-content;
+        height: 100vh;
 
     }
 
