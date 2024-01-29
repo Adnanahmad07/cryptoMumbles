@@ -118,3 +118,43 @@ setTimeout(() => {
 
     nav.style.left = '0';
 }, 600);
+
+
+
+
+
+
+
+
+
+
+
+
+
+function redirectToGoogleForm() {
+    // Replace 'YOUR_GOOGLE_FORM_LINK' with the actual link to your Google Form
+    var googleFormLink = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform';
+    window.location.href = googleFormLink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
