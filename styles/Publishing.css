@@ -126,6 +126,10 @@
         text-align: center;
     }
 
+    .Publishing-prt-r-center p {
+        text-align: justify;
+    }
+
     .Publishing-prt-l {
         width: 100%;
     }
