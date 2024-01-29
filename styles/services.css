@@ -36,12 +36,14 @@
     padding: 1rem 1rem;
     border-radius: 12px;
     transition: all 0.3s;
+    justify-content: space-around;
 
 
 }
 
 .card:hover {
     transform: scale(1.03);
+    box-shadow: 0px 0px 10px rgb(164, 7, 248);
 }
 
 .card h4 {
@@ -51,6 +53,8 @@
     margin-bottom: 4rem;
     color: rgb(255, 255, 255);
     font-weight: 800;
+    max-width: 300px;
+    align-self: center;
 
 }
 

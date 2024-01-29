@@ -27,3 +27,94 @@ const date = new Date()
 const year = date.getFullYear();
 
 document.getElementById("year").textContent = " " + year;
+
+
+
+
+
+
+// function to automatic change background Imeges
+var f = 0;
+var slidImage = [];
+var slidTime = 4000;
+
+
+slidImage[0] = 'slid/1.jpg';
+slidImage[1] = 'slid/2.jpg';
+slidImage[2] = 'slid/3.jpg';
+slidImage[3] = 'slid/4.png';
+
+
+
+
+
+function Changebackground() {
+    document.imgslide.src = slidImage[f];
+
+    if (f < slidImage.length - 1) {
+        f++;
+    } else {
+        f = 0;
+    }
+
+    setTimeout(Changebackground, slidTime);
+
+}
+window.onload = Changebackground;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let sections = document.querySelectorAll('section');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let hight = sec.offsetHeight;
+
+        if (top >= offset && top < offset + hight) {
+            sec.classList.add('show-animate');
+        }
+        else {
+            sec.classList.remove('show-animate');
+
+        }
+
+    })
+}
+
+
+
+
+setTimeout(() => {
+    let mainhyd = document.querySelector('.main-hedding');
+    mainhyd.style.top = '10rem';
+}, 1400)
+
+
+function automaticnavcome() {
+
+}
+
+
+
+setTimeout(() => {
+    let nav = document.querySelector('nav');
+
+    nav.style.left = '0';
+}, 600);

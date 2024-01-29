@@ -9,8 +9,10 @@ nav {
     padding-bottom: 0.3rem;
     position: fixed;
     top: 0;
-    transition: all 0.3s;
+    left: 100%;
+    transition: all 1s;
     z-index: 10;
+
 }
 
 .main-container {
@@ -114,6 +116,35 @@ nav {
     z-index: 20;
     transition: all 0.5s;
 
+
+}
+
+.mob-links {
+    margin-top: 3rem;
+    height: 80%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.mob-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    border: 2px solid transparent;
+    padding-bottom: 0.2rem;
+    transition: transform 0.1s;
+}
+
+.mob-links a:hover {
+    transform: scale(0.97);
+    border-bottom: 2px solid white;
 }
 
 .menu-card button {

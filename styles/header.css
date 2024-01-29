@@ -30,7 +30,7 @@
     z-index: -11;
 }
 
-.main-hedding {
+..main-hedding {
     width: 80vw;
     max-width: 700px;
     height: 300px;
@@ -42,6 +42,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
+
 
 }
 

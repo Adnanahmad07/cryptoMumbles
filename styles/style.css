@@ -5,10 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     /* height: 1900px; */
     width: 100%;
+
 
 
 }
